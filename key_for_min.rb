@@ -19,5 +19,6 @@ def key_for_min_value(name_hash)
       if low_val == nil || low_val > value
         value = low_val
       end
+      end
   end
 end
