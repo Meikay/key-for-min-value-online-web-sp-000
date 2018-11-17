@@ -14,7 +14,7 @@ def key_for_min_value(name_hash)
      if curr_val < def_val
        low_val = curr_val[1]
        low_key = curr_val[0]
-    end
+
     name.each do |key, value|
       if low_val == nil || low_val > value
         value = low_val
