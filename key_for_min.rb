@@ -3,7 +3,7 @@
 require "pry"
 def key_for_min_value(name_hash)
   low_key = nil
-  low_val = nil 
+  low_val = nil
   #convert hash to an array
   name = name_hash.to_a
   #Default key value pair
