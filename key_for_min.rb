@@ -2,8 +2,8 @@
 # Given a hash with numeric values, return the key for the smallest value
 require "pry"
 def key_for_min_value(name_hash)
-  if name_hash == 0
-    nil
+  low_key = nil
+  low_val = nil 
   #convert hash to an array
   name = name_hash.to_a
   #Default key value pair
@@ -12,8 +12,8 @@ def key_for_min_value(name_hash)
   #iterate over new array
   name.each do |curr_val|
     if curr_val < def_val
-      def_val = curr_val[1]
-      def_key = curr_val[0]
+      low_val = curr_val[1]
+      low_key = curr_val[0]
     end
   end
   return def_key
