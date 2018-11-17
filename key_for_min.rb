@@ -2,6 +2,8 @@
 # Given a hash with numeric values, return the key for the smallest value
 require "pry"
 def key_for_min_value(name_hash)
+  if name_hash == 0
+    nil
   #convert hash to an array
   name = name_hash.to_a
   #Default key value pair
